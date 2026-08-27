@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Pigskin Picks</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666666;
+            --accent: #0A84FF;
+            --card: #f5f5f7;
+            --border: #e5e5e5;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1c1c1e;
+                --text: #f5f5f7;
+                --muted: #98989d;
+                --accent: #0A84FF;
+                --card: #2c2c2e;
+                --border: #38383a;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p { margin-bottom: 0.75rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        @media (max-width: 480px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        .contact-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        .contact-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .contact-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item strong { display: block; margin-bottom: 0.4rem; }
+        .faq-item p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0; }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Support</h1>
+    <p class="subtitle">We're here to help with Pigskin Picks.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="icon">✉️</div>
+            <h3>Email</h3>
+            <p><a href="mailto:chase@chaserushton.com">chase@chaserushton.com</a></p>
+        </div>
+        <div class="contact-card">
+            <div class="icon">🐛</div>
+            <h3>Bug Reports</h3>
+            <p><a href="https://github.com/ChaseRushton/PredictionAPP/issues">GitHub Issues</a></p>
+        </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <strong>How do I make a prediction?</strong>
+        <p>Go to the Schedule tab, tap on a game, and select which team you think will win. You can change your pick anytime before kickoff.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>When do picks lock?</strong>
+        <p>Picks lock at the start of each game (kickoff). You cannot change a pick once the game is in progress or final.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How do leagues work?</strong>
+        <p>Create a league from the Leagues tab and share the 8-character invite code with friends. League members can see each other's picks after games lock and compete on a private leaderboard.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>What is the Super Bowl Champion pick?</strong>
+        <p>Before the season ends, pick which team you think will win the Super Bowl. This pick is displayed on the leaderboard and locked once the Super Bowl begins.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How is accuracy calculated?</strong>
+        <p>Accuracy = (correct picks / total graded picks) × 100. Pending picks (games not yet final) are not counted.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Where do the scores and betting lines come from?</strong>
+        <p>Game data, scores, betting lines, and injury reports are sourced from ESPN's public data. Betting lines are informational only — this app does not facilitate real-money gambling.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How do I delete my account?</strong>
+        <p>Go to Profile → scroll to the bottom → tap "Delete Account." This permanently removes all your data including predictions, leagues, and login credentials.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>The app shows "offline" or won't load data.</strong>
+        <p>Check your internet connection and try pulling down to refresh. The app caches your last-viewed schedule for offline access.</p>
+    </div>
+
+    <h2>Response Time</h2>
+    <p>We aim to respond to all support emails within 48 hours. For bug reports, please include your device model, iOS version, and steps to reproduce the issue.</p>
+
+    <div class="card">
+        <h3>App Info</h3>
+        <p><strong>Developer:</strong> Chase Rushton</p>
+        <p><strong>Platform:</strong> iOS 17+</p>
+        <p><strong>Privacy Policy:</strong> <a href="privacy-policy.html">View Privacy Policy</a></p>
+        <p style="margin-bottom: 0;"><strong>Terms of Service:</strong> <a href="terms.html">View Terms of Service</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Chase Rushton. All rights reserved.</p>
+    </div>
+</body>
+</html>
