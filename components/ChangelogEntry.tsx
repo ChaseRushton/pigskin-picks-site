@@ -5,6 +5,7 @@ export default function ChangelogEntry({ entry }: { entry: ChangelogEntryType })
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   });
 
   return (
