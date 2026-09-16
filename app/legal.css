@@ -47,6 +47,12 @@
   padding: 1rem 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  .legal-faq-item {
+    border-bottom-color: theme('colors.brand.border.dark');
+  }
+}
+
 .legal-faq-item:last-child {
   border-bottom: none;
 }
