@@ -1,3 +1,13 @@
+import Hero from '@/components/Hero';
+import FeatureGrid from '@/components/FeatureGrid';
+import ScreenshotGallery from '@/components/ScreenshotGallery';
+
 export default function Home() {
-  return <main className="p-8">Pigskin Picks — under construction.</main>;
+  return (
+    <main>
+      <Hero />
+      <ScreenshotGallery />
+      <FeatureGrid />
+    </main>
+  );
 }
