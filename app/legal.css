@@ -37,6 +37,11 @@
   }
 }
 
+.legal-contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 .legal-faq-item {
   border-bottom: 1px solid theme('colors.brand.border.DEFAULT');
   padding: 1rem 0;
