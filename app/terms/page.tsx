@@ -1,0 +1,80 @@
+import Link from 'next/link';
+import LegalLayout from '@/components/LegalLayout';
+
+export const metadata = {
+  title: 'Terms of Service — Pigskin Picks',
+};
+
+export default function TermsPage() {
+  return (
+    <LegalLayout title="Terms of Service" subtitle="Last updated: September 16, 2026">
+      <p>These Terms of Service (&quot;Terms&quot;) govern your use of Pigskin Picks (&quot;the app&quot;), an NFL game prediction app developed by Chase Rushton (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). By creating an account or using the app, you agree to these Terms. If you do not agree, do not use the app.</p>
+
+      <h2>1. The Service</h2>
+      <p>Pigskin Picks is a free entertainment app that lets you predict the winners of NFL games, track your accuracy, and compete with friends in leagues.</p>
+      <div className="legal-card">
+        <p><strong>No gambling.</strong> Pigskin Picks is a prediction game only. There is no real-money wagering, no entry fees, no prizes, and no payouts of any kind. Betting line information (point spreads, over/under) displayed in the app is provided for informational and entertainment purposes only and does not constitute an offer or solicitation to gamble.</p>
+      </div>
+
+      <h2>2. Eligibility</h2>
+      <ul>
+        <li>You must be at least 13 years old to use the app.</li>
+        <li>You must provide accurate information when creating your account.</li>
+        <li>You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account.</li>
+        <li>One account per person. You may not create accounts for others or share accounts.</li>
+      </ul>
+
+      <h2>3. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use offensive, misleading, or impersonating usernames or league names</li>
+        <li>Harass, abuse, or harm other users</li>
+        <li>Attempt to access other users&apos; accounts or data</li>
+        <li>Interfere with, disrupt, or reverse-engineer the app or its backend services</li>
+        <li>Use bots, scripts, or automated tools to interact with the service</li>
+        <li>Circumvent rate limits or other security measures</li>
+      </ul>
+
+      <h2>4. Account Termination</h2>
+      <p>We may suspend or terminate accounts that violate these Terms, abuse the service, or engage in conduct we reasonably believe is harmful to other users or the service. You may delete your own account at any time from the <strong>Profile</strong> tab in the app (see our <Link href="/privacy">Privacy Policy</Link> for details on data deletion).</p>
+
+      <h2>5. Content &amp; Data</h2>
+      <ul>
+        <li><strong>Your content:</strong> Predictions, picks, usernames, and league names you create remain yours, but you grant us a license to store and display them as needed to operate the service (e.g., on leaderboards and within leagues).</li>
+        <li><strong>NFL data:</strong> Game schedules, scores, team information, betting lines, and injury reports are sourced from publicly available ESPN endpoints for personal, non-commercial use. Pigskin Picks is not affiliated with, endorsed by, or sponsored by the NFL, ESPN, or any NFL team. All team names and logos are trademarks of their respective owners.</li>
+      </ul>
+
+      <h2>6. Service Availability</h2>
+      <p>The app is provided free of charge and we make no guarantee of uninterrupted availability. We may modify, suspend, or discontinue any part of the service at any time without notice. Game data accuracy depends on third-party sources and may occasionally be delayed or incorrect.</p>
+
+      <h2>7. Disclaimer of Warranties</h2>
+      <p>THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE OR THAT GAME DATA WILL BE ACCURATE OR TIMELY.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP. OUR TOTAL LIABILITY FOR ANY CLAIM ARISING FROM THESE TERMS OR THE APP SHALL NOT EXCEED FIFTY DOLLARS ($50).</p>
+
+      <h2>9. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. Changes will be posted on this page with an updated &quot;Last updated&quot; date. Continued use of the app after changes constitutes acceptance of the revised Terms.</p>
+
+      <h2>10. Dispute Resolution &amp; Binding Arbitration</h2>
+      <div className="legal-card">
+        <p><strong>Please read this section carefully — it affects your legal rights, including your right to file a lawsuit in court.</strong></p>
+      </div>
+      <p><strong>Informal resolution first.</strong> Before filing a claim against us, you agree to contact us at <a href="mailto:chase@chaserushton.com">chase@chaserushton.com</a> and give us 30 days to try to resolve the dispute informally.</p>
+      <p><strong>Binding arbitration.</strong> If a dispute isn&apos;t resolved informally, you and we agree that any dispute, claim, or controversy arising out of or relating to these Terms or the app will be resolved by binding arbitration administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules, rather than in court — except as set out below. Arbitration will proceed on an individual basis only, in the county where you reside (or another location we mutually agree on), and may be conducted by phone, online, or on written submissions where the AAA&apos;s rules allow it.</p>
+      <p><strong>Class action waiver.</strong> You and we agree that any arbitration or legal proceeding will be conducted only on an individual basis and not as a class, consolidated, or representative action. If this waiver is found unenforceable as to a particular claim, that claim (and only that claim) must be brought in court, and the rest remains subject to arbitration.</p>
+      <p><strong>Exceptions.</strong> Either party may instead bring an individual claim in small claims court if it qualifies, or seek injunctive or other equitable relief in court to stop misuse of the app or infringement of intellectual property rights.</p>
+      <p><strong>Opting out.</strong> You may opt out of this arbitration agreement within 30 days of first agreeing to these Terms by emailing <a href="mailto:chase@chaserushton.com">chase@chaserushton.com</a> with your name, account email, and a clear statement that you want to opt out of arbitration. If you opt out, this arbitration section won&apos;t apply to you, but every other part of these Terms still will.</p>
+      <p>This arbitration agreement is governed by the Federal Arbitration Act.</p>
+
+      <h2>11. Governing Law</h2>
+      <p>These Terms are governed by the laws of the United States and the state in which the developer resides, without regard to conflict-of-law principles.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have questions about these Terms, please contact us:</p>
+      <div className="legal-card">
+        <p><strong>Email:</strong> <a href="mailto:chase@chaserushton.com">chase@chaserushton.com</a></p>
+      </div>
+    </LegalLayout>
+  );
+}

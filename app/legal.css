@@ -1,0 +1,47 @@
+.legal-card {
+  background: theme('colors.brand.card.DEFAULT');
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .legal-card {
+    background: theme('colors.brand.card.dark');
+  }
+}
+
+.legal-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 480px) {
+  .legal-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.legal-contact-card {
+  background: theme('colors.brand.card.DEFAULT');
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .legal-contact-card {
+    background: theme('colors.brand.card.dark');
+  }
+}
+
+.legal-faq-item {
+  border-bottom: 1px solid theme('colors.brand.border.DEFAULT');
+  padding: 1rem 0;
+}
+
+.legal-faq-item:last-child {
+  border-bottom: none;
+}
