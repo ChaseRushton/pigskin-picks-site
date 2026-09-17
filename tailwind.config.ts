@@ -6,19 +6,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // "Pigskin" palette: turf green + leather brown, literal to the
-        // product name rather than a generic tech-blue accent. Light mode
-        // reads as chalk/turf-at-noon; dark mode as turf-at-dusk. The
-        // accent hue deliberately shifts (brown in light, gold in dark)
-        // for contrast rather than staying one fixed color.
+        // "Pigskin" palette: turf green + leather brown + end-zone red,
+        // literal to the product rather than a generic tech-blue accent.
+        // Deliberately avoids green+gold (Packers) or other single-team
+        // color pairings — no NFL team affiliation is implied. Light mode
+        // reads as chalk/turf-at-noon; dark mode as turf-at-dusk, with the
+        // accent shifting from brown to red for contrast against the dark
+        // green base.
         brand: {
           bg: { DEFAULT: '#F2F3EC', dark: '#14251C' },
           text: { DEFAULT: '#14201A', dark: '#F2EFE6' },
           muted: { DEFAULT: '#5B6B5F', dark: '#9FAE9F' },
-          accent: { DEFAULT: '#8B4A2B', dark: '#D4A73C' },
+          accent: { DEFAULT: '#8B4A2B', dark: '#C1503B' },
           card: { DEFAULT: '#E7E9DC', dark: '#1E3A2C' },
           border: { DEFAULT: '#D9DCC9', dark: '#2C4536' },
-          gold: { DEFAULT: '#B8860B', dark: '#D4A73C' },
+          flag: { DEFAULT: '#A8402F', dark: '#C1503B' },
         },
       },
       fontFamily: {

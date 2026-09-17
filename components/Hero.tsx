@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="relative mx-auto w-full max-w-[280px] lg:mx-0 lg:max-w-[320px]">
           <div
-            className="absolute inset-0 -rotate-6 rounded-[2rem] bg-brand-gold dark:bg-brand-gold-dark"
+            className="absolute inset-0 -rotate-6 rounded-[2rem] bg-brand-flag dark:bg-brand-flag-dark"
             aria-hidden="true"
           />
           <div className="relative overflow-hidden rounded-[2rem] border border-brand-border bg-brand-card shadow-2xl rotate-3 dark:border-brand-border-dark dark:bg-brand-card-dark">
