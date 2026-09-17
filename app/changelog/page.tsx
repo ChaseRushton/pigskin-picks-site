@@ -12,7 +12,9 @@ export default function ChangelogPage() {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-16">
-      <h1 className="text-3xl font-bold">What&rsquo;s New</h1>
+      <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
+        What&rsquo;s New
+      </h1>
       <div className="mt-8">
         {sorted.map((entry) => (
           <ChangelogEntry key={entry.date + entry.title} entry={entry} />

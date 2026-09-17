@@ -4,24 +4,30 @@ const SCREENSHOTS = [
   { src: '/01-schedule.png', alt: 'Weekly NFL schedule screen' },
   { src: '/02-game-detail.png', alt: 'Game detail screen with predictions' },
   { src: '/03-leaderboard.png', alt: 'Leaderboard screen' },
-  { src: '/04-league-week.png', alt: 'League week screen showing the whole league\'s picks' },
+  { src: '/04-league-week.png', alt: "League week screen showing the whole league's picks" },
   { src: '/05-profile.png', alt: 'Profile screen with stats and Super Bowl pick' },
 ] as const;
 
 export default function ScreenshotGallery() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-16">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="py-16 sm:py-20" aria-label="App screenshots">
+      <div className="mx-auto max-w-5xl px-4">
+        <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
+          See it in action
+        </h2>
+      </div>
+      <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:mx-auto sm:max-w-5xl">
         {SCREENSHOTS.map((shot) => (
           <div
             key={shot.src}
-            className="overflow-hidden rounded-2xl border border-brand-border dark:border-brand-border-dark"
+            className="w-[240px] shrink-0 snap-center overflow-hidden rounded-2xl border border-brand-border dark:border-brand-border-dark sm:w-[260px]"
           >
             <Image
               src={shot.src}
               alt={shot.alt}
               width={390}
               height={844}
+              sizes="260px"
               className="h-auto w-full"
             />
           </div>

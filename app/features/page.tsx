@@ -23,15 +23,19 @@ export const metadata = {
 export default function FeaturesPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-3xl font-bold">Everything you need to run your league</h1>
+      <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Everything you need to run your league
+      </h1>
       <p className="mt-3 text-brand-muted dark:text-brand-muted-dark">
         Pigskin Picks covers the whole season, from Week 1 through the Super
         Bowl.
       </p>
-      <dl className="mt-10 space-y-8">
+      <dl className="mt-10 divide-y divide-brand-border dark:divide-brand-border-dark">
         {ALL_FEATURES.map((feature) => (
-          <div key={feature.title}>
-            <dt className="font-semibold">{feature.title}</dt>
+          <div key={feature.title} className="py-5">
+            <dt className="font-display text-lg font-extrabold text-brand-accent dark:text-brand-accent-dark">
+              {feature.title}
+            </dt>
             <dd className="mt-1 text-sm text-brand-muted dark:text-brand-muted-dark">
               {feature.body}
             </dd>

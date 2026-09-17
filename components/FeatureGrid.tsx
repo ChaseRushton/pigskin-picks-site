@@ -27,15 +27,20 @@ const HOME_FEATURES = [
 
 export default function FeatureGrid() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-16">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="mx-auto max-w-5xl px-4 py-16 sm:py-20">
+      <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
+        What you get
+      </h2>
+      <div className="mt-6 divide-y divide-brand-border dark:divide-brand-border-dark">
         {HOME_FEATURES.map((feature) => (
           <div
             key={feature.title}
-            className="rounded-xl border border-brand-border bg-brand-card p-6 dark:border-brand-border-dark dark:bg-brand-card-dark"
+            className="grid grid-cols-1 gap-1 py-6 sm:grid-cols-[220px_1fr] sm:gap-8"
           >
-            <h3 className="font-semibold">{feature.title}</h3>
-            <p className="mt-2 text-sm text-brand-muted dark:text-brand-muted-dark">
+            <h3 className="font-display text-xl font-extrabold text-brand-accent dark:text-brand-accent-dark">
+              {feature.title}
+            </h3>
+            <p className="text-brand-muted dark:text-brand-muted-dark">
               {feature.body}
             </p>
           </div>
