@@ -6,21 +6,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // "Pigskin" palette: turf green + leather brown + end-zone red,
-        // literal to the product rather than a generic tech-blue accent.
-        // Deliberately avoids green+gold (Packers) or other single-team
-        // color pairings — no NFL team affiliation is implied. Light mode
-        // reads as chalk/turf-at-noon; dark mode as turf-at-dusk, with the
-        // accent shifting from brown to red for contrast against the dark
-        // green base.
+        // "Pigskin" palette: turf green + leather brown + end-zone red in
+        // light mode, literal to the product rather than a generic
+        // tech-blue accent. Dark mode uses a warm near-black ("stadium
+        // lights at night") instead of dark green — an all-dark-turf dark
+        // mode read as muddy/low-contrast in practice — with the red accent
+        // brightened so it pops against black instead of competing with a
+        // similarly-dark green. Deliberately avoids green+gold (Packers)
+        // or other single-team color pairings.
         brand: {
-          bg: { DEFAULT: '#F2F3EC', dark: '#14251C' },
+          bg: { DEFAULT: '#F2F3EC', dark: '#141210' },
           text: { DEFAULT: '#14201A', dark: '#F2EFE6' },
-          muted: { DEFAULT: '#5B6B5F', dark: '#9FAE9F' },
-          accent: { DEFAULT: '#8B4A2B', dark: '#C1503B' },
-          card: { DEFAULT: '#E7E9DC', dark: '#1E3A2C' },
-          border: { DEFAULT: '#D9DCC9', dark: '#2C4536' },
-          flag: { DEFAULT: '#A8402F', dark: '#C1503B' },
+          muted: { DEFAULT: '#5B6B5F', dark: '#A69C8E' },
+          accent: { DEFAULT: '#8B4A2B', dark: '#D6553E' },
+          card: { DEFAULT: '#E7E9DC', dark: '#1F1B16' },
+          border: { DEFAULT: '#D9DCC9', dark: '#332C24' },
+          flag: { DEFAULT: '#A8402F', dark: '#D6553E' },
         },
       },
       fontFamily: {
