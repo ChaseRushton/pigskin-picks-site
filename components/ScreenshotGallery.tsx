@@ -16,22 +16,28 @@ export default function ScreenshotGallery() {
           See it in action
         </h2>
       </div>
-      <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:mx-auto sm:max-w-5xl">
-        {SCREENSHOTS.map((shot) => (
-          <div
-            key={shot.src}
-            className="w-[240px] shrink-0 snap-center overflow-hidden rounded-2xl border border-brand-border dark:border-brand-border-dark sm:w-[260px]"
-          >
-            <Image
-              src={shot.src}
-              alt={shot.alt}
-              width={390}
-              height={844}
-              sizes="260px"
-              className="h-auto w-full"
-            />
-          </div>
-        ))}
+      <div className="relative mx-auto mt-8 max-w-5xl">
+        <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4">
+          {SCREENSHOTS.map((shot) => (
+            <div
+              key={shot.src}
+              className="w-[240px] shrink-0 snap-center overflow-hidden rounded-2xl border border-brand-border dark:border-brand-border-dark sm:w-[260px]"
+            >
+              <Image
+                src={shot.src}
+                alt={shot.alt}
+                width={390}
+                height={844}
+                sizes="260px"
+                className="h-auto w-full"
+              />
+            </div>
+          ))}
+        </div>
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-brand-bg to-transparent dark:from-brand-bg-dark sm:w-16"
+          aria-hidden="true"
+        />
       </div>
     </section>
   );
