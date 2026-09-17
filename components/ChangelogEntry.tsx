@@ -16,7 +16,9 @@ export default function ChangelogEntry({ entry }: { entry: ChangelogEntryType })
       >
         {formattedDate}
       </time>
-      <h2 className="mt-1 font-semibold">{entry.title}</h2>
+      <h2 className="mt-1 font-display text-xl font-extrabold text-brand-accent dark:text-brand-accent-dark">
+        {entry.title}
+      </h2>
       <p className="mt-2 text-sm text-brand-muted dark:text-brand-muted-dark">
         {entry.body}
       </p>
