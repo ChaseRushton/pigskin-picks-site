@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 const SCREENSHOTS = [
-  { src: '/screenshots/01-schedule.png', alt: 'Weekly NFL schedule screen' },
-  { src: '/screenshots/02-game-detail.png', alt: 'Game detail screen with predictions' },
-  { src: '/screenshots/03-leaderboard.png', alt: 'Leaderboard screen' },
+  { src: '/01-schedule.png', alt: 'Weekly NFL schedule screen' },
+  { src: '/02-game-detail.png', alt: 'Game detail screen with predictions' },
+  { src: '/03-leaderboard.png', alt: 'Leaderboard screen' },
 ] as const;
 
 export default function ScreenshotGallery() {
