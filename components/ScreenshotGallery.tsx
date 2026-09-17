@@ -35,7 +35,7 @@ export default function ScreenshotGallery() {
           ))}
         </div>
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-brand-bg to-transparent dark:from-brand-bg-dark sm:w-16"
+          className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-brand-bg/70 to-transparent dark:from-brand-bg-dark/70 sm:w-14"
           aria-hidden="true"
         />
       </div>
